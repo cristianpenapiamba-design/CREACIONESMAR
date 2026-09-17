@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/styles.css">
+<script src="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/_ds_bundle.js"></script>
+<style>
+html,body{margin:0;background:var(--color-bg);scroll-behavior:smooth}
+a{color:var(--color-accent-300);text-decoration:none}
+a:hover{color:var(--color-accent-200)}
+.wrap{max-width:1180px;margin:0 auto;padding:0 20px;box-sizing:border-box}
+.mono{font-family:var(--font-heading);letter-spacing:-.035em}
+.btn2{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:13px 22px;border-radius:999px;border:1px solid var(--color-accent);background:transparent;color:var(--color-text);font-family:var(--font-heading);font-size:15px;cursor:pointer;transition:background .15s}
+.btn2:hover{background:color-mix(in srgb, var(--color-accent-800) 60%, transparent);color:var(--color-text)}
+.btn2:active{background:color-mix(in srgb, var(--color-accent-700) 70%, transparent)}
+.btn2:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+.btn2.solid{background:color-mix(in srgb, var(--color-accent-900) 80%, transparent)}
+.btn2.plain{border-color:var(--color-neutral-700);color:var(--color-neutral-100)}
+.btn2.plain:hover{background:color-mix(in srgb, var(--color-neutral-800) 70%, transparent)}
+.rail{position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--color-bg) 94%, transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--color-divider)}
+.rail .row{display:flex;align-items:center;gap:20px;overflow-x:auto;padding:13px 20px;max-width:1180px;margin:0 auto;scrollbar-width:none;box-sizing:border-box;font-size:13.5px}
+.rail .row::-webkit-scrollbar{display:none}
+.rail a{color:var(--color-neutral-200);white-space:nowrap}
+.rail a:hover{color:var(--color-text)}
+.line{padding:44px 0;border-top:1px solid var(--color-divider)}
+.lhead{display:flex;align-items:flex-end;justify-content:space-between;gap:22px;flex-wrap:wrap;margin-bottom:6px}
+.lhead h2{margin:8px 0 0;font-family:var(--font-heading);font-size:clamp(23px,3.4vw,31px);letter-spacing:-.025em;line-height:1.1}
+.kick{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--color-accent-200)}
+.kick::before{content:"";width:22px;height:2px;background:var(--color-accent);flex:none}
+.priceb{font-family:var(--font-heading);font-size:clamp(26px,4vw,34px);letter-spacing:-.03em;line-height:1}
+.chips{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 18px}
+.chips span{font-size:12px;color:var(--color-neutral-100);border:1px solid var(--color-neutral-700);border-radius:999px;padding:5px 11px}
+.track{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-behavior:smooth;scrollbar-width:none;padding:2px 0 6px;-webkit-overflow-scrolling:touch}
+.track::-webkit-scrollbar{display:none}
+.card2{flex:none;width:228px;scroll-snap-align:start;border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);overflow:hidden;background:var(--color-neutral-900);color:inherit;display:block}
+.card2:hover{border-color:color-mix(in srgb, var(--color-accent-500) 60%, transparent);color:inherit}
+.card2 img{width:228px;aspect-ratio:5/4;object-fit:cover;display:block}
+.arw:disabled{opacity:.45;cursor:default}
+.arw:disabled:hover{background:transparent}
+.card2 .meta{padding:12px 13px 14px}
+.card2 .t{font-family:var(--font-heading);font-size:15.5px;line-height:1.25}
+.card2 .go{margin-top:10px;display:flex;align-items:center;justify-content:space-between;font-size:13px;font-family:var(--font-heading);color:var(--color-accent-200);border-top:1px solid var(--color-neutral-800);padding-top:10px}
+.card2:hover .go{color:var(--color-accent-100)}
+.arrows{display:flex;gap:7px}
+.arw{width:36px;height:36px;border-radius:999px;border:1px solid var(--color-neutral-700);background:transparent;color:var(--color-neutral-100);font-size:15px;cursor:pointer;line-height:1}
+.arw:hover{background:color-mix(in srgb, var(--color-neutral-800) 70%, transparent)}
+.arw:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+.chat{border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);background:var(--color-neutral-900);padding:18px;display:flex;flex-direction:column;gap:10px}
+.bub{max-width:88%;padding:11px 14px;border-radius:14px;font-size:13.5px;line-height:1.5}
+.bub.me{align-self:flex-end;background:color-mix(in srgb, var(--color-accent-900) 85%, transparent);border:1px solid var(--color-accent-700);border-bottom-right-radius:4px}
+.bub.them{align-self:flex-start;background:var(--color-neutral-800);border-bottom-left-radius:4px;color:var(--color-neutral-100)}
+.pick{display:flex;flex-wrap:wrap;gap:7px}
+.pk{border:1px solid var(--color-neutral-700);background:transparent;color:var(--color-neutral-100);border-radius:999px;padding:8px 14px;font-size:13px;cursor:pointer;font-family:var(--font-body)}
+.pk:hover{background:color-mix(in srgb, var(--color-neutral-800) 70%, transparent)}
+.pk:focus-visible{outline:2px solid var(--color-accent);outline-offset:2px}
+.pk[data-on="1"]{border-color:var(--color-accent);background:color-mix(in srgb, var(--color-accent-900) 70%, transparent);color:var(--color-accent-100)}
+.build{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:30px;align-items:start}
+.fab{position:fixed;right:18px;bottom:18px;z-index:30;box-shadow:var(--shadow-lg);background:color-mix(in srgb, var(--color-accent-900) 92%, transparent)}
+@media (max-width:820px){.build{grid-template-columns:1fr;gap:22px}}
+@media (max-width:640px){.fab{left:18px;right:18px}}
+</style>
+</helmet>
+
+<header data-screen-label="Portada" style="padding:56px 0 46px">
+  <div class="wrap" style="display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,1fr);gap:36px;align-items:center">
+    <div>
+      <div style="font-size:11px;letter-spacing:.22em;text-transform:uppercase;color:var(--color-accent-200);margin-bottom:16px">Creaciones M&amp;P · Desayunos sorpresa</div>
+      <h1 class="mono" style="margin:0;font-size:clamp(36px,6.4vw,66px);line-height:.98;max-width:18ch">La sorpresa llega antes que el día</h1>
+      <p style="margin:20px 0 26px;font-size:clamp(16px,2.2vw,19px);line-height:1.45;color:var(--color-neutral-100);max-width:40ch">23 diseños a domicilio, desde $35.000. Desliza cada colección hacia el lado, elige el tuyo y nos escribes por WhatsApp.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn2 solid" href="#l35">Ver los diseños</a>
+        <button class="btn2 plain" onClick="{{ compartir }}">Compartir</button>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+      <img src="img/90k-rosa-dorado.jpg" alt="" style="width:100%;height:230px;object-fit:cover;border-radius:var(--radius-lg);grid-row:span 2">
+      <img src="img/110k-negro-gold.jpg" alt="" style="width:100%;height:110px;object-fit:cover;border-radius:var(--radius-lg)">
+      <img src="img/75k-rosa-pastel.jpg" alt="" style="width:100%;height:110px;object-fit:cover;border-radius:var(--radius-lg)">
+    </div>
+  </div>
+</header>
+
+<div class="rail">
+  <div class="row">
+    <span style="color:var(--color-neutral-400);white-space:nowrap;font-size:11px;letter-spacing:.18em;text-transform:uppercase">Colecciones</span>
+    <a href="#l35">Clásicos $35.000</a>
+    <a href="#l55">Premium $55.000</a>
+    <a href="#l65">Sorpresa Elegante $65.000</a>
+    <a href="#l75">Super Premium $75.000</a>
+    <a href="#l90">Arco de globos $90.000</a>
+    <a href="#l110">Lujo $110.000</a>
+  </div>
+</div>
+
+<main class="wrap">
+
+  <sc-for list="{{ lineas }}" as="l" hint-placeholder-count="6">
+    <section class="line" id="{{ l.anchor }}" data-screen-label="{{ l.nombre }}">
+      <div class="lhead">
+        <div>
+          <div class="kick">{{ l.orden }}</div>
+          <h2>{{ l.nombre }}</h2>
+        </div>
+        <div style="display:flex;align-items:flex-end;gap:18px">
+          <div class="priceb">{{ l.precio }}</div>
+          <div class="arrows">
+            <button class="arw" aria-label="Anterior" onClick="{{ l.prev }}" disabled="{{ l.inerte }}">←</button>
+            <button class="arw" aria-label="Siguiente" onClick="{{ l.next }}" disabled="{{ l.inerte }}">→</button>
+          </div>
+        </div>
+      </div>
+      <p style="margin:10px 0 0;font-size:14.5px;line-height:1.55;color:var(--color-neutral-200);max-width:62ch">{{ l.desc }}</p>
+      <div class="chips">
+        <sc-for list="{{ l.menu }}" as="m" hint-placeholder-count="6">
+          <span>{{ m }}</span>
+        </sc-for>
+      </div>
+      <div class="track" ref="{{ l.ref }}">
+        <sc-for list="{{ l.disenos }}" as="d" hint-placeholder-count="4">
+          <a class="card2" href="{{ d.wa }}" target="_blank" rel="noopener">
+            <img data-src="{{ d.src }}" ref="{{ setImg }}" alt="{{ d.nombre }}">
+            <div class="meta">
+              <div class="t">{{ d.nombre }}</div>
+              <div class="go"><span>Pedir por WhatsApp</span><span>→</span></div>
+            </div>
+          </a>
+        </sc-for>
+      </div>
+    </section>
+  </sc-for>
+
+  <section class="line" data-screen-label="Armar pedido">
+    <div class="kick">Arma tu pedido</div>
+    <h2 class="mono" style="margin:10px 0 24px;font-size:clamp(24px,3.6vw,34px)">Escribe el mensaje sin escribirlo</h2>
+    <div class="build">
+      <div>
+        <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-300);margin-bottom:9px">1 · Ocasión</div>
+        <div class="pick" style="margin-bottom:20px">
+          <sc-for list="{{ ocasiones }}" as="o" hint-placeholder-count="4">
+            <button class="pk" data-on="{{ o.on }}" onClick="{{ o.set }}">{{ o.label }}</button>
+          </sc-for>
+        </div>
+        <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-300);margin-bottom:9px">2 · Colección</div>
+        <div class="pick" style="margin-bottom:20px">
+          <sc-for list="{{ picks }}" as="p" hint-placeholder-count="6">
+            <button class="pk" data-on="{{ p.on }}" onClick="{{ p.set }}">{{ p.label }}</button>
+          </sc-for>
+        </div>
+        <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-300);margin-bottom:9px">3 · ¿Para quién es?</div>
+        <div class="field" style="max-width:340px">
+          <input class="input" type="text" placeholder="Nombre de quien recibe" value="{{ nombre }}" onInput="{{ setNombre }}">
+        </div>
+      </div>
+      <div>
+        <div class="chat">
+          <div class="bub me">{{ mensaje }}</div>
+          <div class="bub them">¡Hola! Sí, con gusto. ¿Para qué día y a qué hora la entregamos?</div>
+        </div>
+        <a class="btn2 solid" href="{{ waArmado }}" target="_blank" rel="noopener" style="margin-top:16px;width:100%;box-sizing:border-box">Enviar este mensaje por WhatsApp</a>
+        <p style="margin:12px 0 0;font-size:12.5px;color:var(--color-neutral-300);line-height:1.5">Se abre WhatsApp con el mensaje ya escrito. Tú solo le das enviar.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="line" data-screen-label="Contacto" style="padding-bottom:84px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:26px;flex-wrap:wrap">
+      <div>
+        <div class="mono" style="font-size:clamp(26px,4.4vw,38px);line-height:1.05;max-width:22ch">Pedidos con 24 horas de anticipación</div>
+        <p style="margin:12px 0 0;font-size:13.5px;color:var(--color-neutral-200)">{{ notaEntrega }}</p>
+      </div>
+      <div style="display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn2 solid" href="{{ waGeneral }}" target="_blank" rel="noopener">300 2549527</a>
+        <a class="btn2 plain" href="{{ waGeneral2 }}" target="_blank" rel="noopener">311 2698201</a>
+      </div>
+    </div>
+    <p style="margin:34px 0 0;font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-400)">Creaciones M&amp;P · Detalles que despiertan emociones · {{ anio }}</p>
+  </section>
+
+</main>
+
+<a class="btn2 solid fab" href="{{ waGeneral }}" target="_blank" rel="noopener">Pedir por WhatsApp</a>
+
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="#262a60"/><text x="200" y="238" font-family="Inter, sans-serif" font-size="140" font-weight="500" fill="#e9e9ed" text-anchor="middle">M&amp;P</text></svg>
+</template>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;anio&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;2026&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;notaEntrega&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Entregas a domicilio · Personalizamos nombre, mensaje y color&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;tel1&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;573002549527&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;WhatsApp&quot;},&quot;tel2&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;573112698201&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;WhatsApp&quot;}}">
+const LINEAS = [
+  { id: "35", orden: "Colección 01", nombre: "Desayunos Clásicos", precio: "$35.000",
+    desc: "Globo grande, base de globos cromados y bandeja con lo esencial. El detalle más pedido para una mañana de cumpleaños.",
+    menu: ["Huevos con salchicha o revueltos", "Sándwich", "Fruta picada", "Mini Nutella", "Bebida", "Cubiertos"],
+    disenos: [["Azul Rey", "img/35k-azul-rey.jpg"], ["Rosado Pastel", "img/35k-rosado-pastel.jpg"], ["Negro Gold", "img/35k-negro-gold.jpg"]] },
+  { id: "55", orden: "Colección 02", nombre: "Desayunos Premium", precio: "$55.000",
+    desc: "Bandeja hexagonal decorada con moños, globo estampado de estrellas y una mesa completa.",
+    menu: ["Huevos rancheros o revueltos", "Sandwiches", "Milo o chocolate", "Jugo natural", "Maní o masmelos", "Cubiertos"],
+    disenos: [["Negro Gold Estrellas", "img/55k-negro-estrellas.jpg"], ["Rojo Pasión", "img/55k-rojo-pasion.jpg"], ["Azul Rey", "img/55k-azul-rey.jpg"], ["Rosado Princesa", "img/55k-rosado-princesa.jpg"]] },
+  { id: "65", orden: "Colección 03", nombre: "Sorpresa Elegante", precio: "$65.000",
+    desc: "La mesa de la línea Premium sobre bandeja de madera, con globo burbuja y moño a juego.",
+    menu: ["Huevos rancheros o revueltos", "Sandwiches", "Milo o chocolate", "Jugo natural", "Maní o masmelos", "Cubiertos"],
+    disenos: [["Rojo", "img/65k-rojo.jpg"], ["Azul", "img/65k-azul.jpg"], ["Negro", "img/65k-negro.jpg"], ["Rosa", "img/65k-rosa.jpg"]] },
+  { id: "75", orden: "Colección 04 · el más completo por su precio", nombre: "Super Premium", precio: "$75.000",
+    desc: "Mesa de madera tipo pícnic, bouquet de globos y la bandeja más surtida.",
+    menu: ["Huevos rancheros o revueltos", "Sandwiches frescos", "Milo o chocolate caliente", "Jugo con tapa domo", "Fresa, kiwi y mango", "Crispetas + maní", "Chocolates", "Mesa de madera"],
+    disenos: [["Rosa Pastel", "img/75k-rosa-pastel.jpg"], ["Rojo", "img/75k-rojo.jpg"], ["Negro Elegante Gold", "img/75k-negro-gold.jpg"], ["Rosado con lunares", "img/75k-rosado-lunares.jpg"]] },
+  { id: "90", orden: "Colección 05", nombre: "Arco de globos", precio: "$90.000",
+    desc: "Bandeja blanca con arco de globos y placa personalizada, para cada ocasión.",
+    menu: ["Huevos rancheros o revueltos", "Sandwiches", "Milo o chocolate", "Jugo natural", "Fruta picada", "Maní", "Gomitas", "Placa personalizada"],
+    disenos: [["Azul Marino · Cumpleaños", "img/90k-azul-marino.jpg"], ["Rosa y Dorado · Cumpleaños", "img/90k-rosa-dorado.jpg"], ["Rojo · Aniversario", "img/90k-rojo-aniversario.jpg"], ["Rosa · Amor y Amistad", "img/90k-rosa-amistad.jpg"]] },
+  { id: "110", orden: "Colección 06 · lo más alto de la carta", nombre: "Colección de Lujo", precio: "$110.000",
+    desc: "Globo burbuja con globos internos, placa con mensaje y la bandeja más completa.",
+    menu: ["Huevos rancheros o revueltos", "Sandwiches de tomate", "Milo o chocolate", "Jugo natural", "Fruta picada", "Maní", "Gomitas", "Ferrero Rocher", "Pastelito"],
+    disenos: [["Te Amo Infinitamente", "img/110k-te-amo.jpg"], ["Eres Mi Persona Favorita", "img/110k-azul-noche.jpg"], ["Siempre a tu Lado", "img/110k-rojo-negro.jpg"], ["Eres el Amor de mi Vida", "img/110k-negro-gold.jpg"]] },
+];
+
+const OCASIONES = ["Cumpleaños", "Aniversario", "Amor y amistad", "Solo porque sí"];
+
+class Component extends DCLogic {
+  state = { ocasion: "Cumpleaños", coleccion: "75", nombre: "", fijos: {} };
+  tracks = {};
+
+  componentDidMount() {
+    this.medir = () => {
+      const fijos = {};
+      Object.keys(this.tracks).forEach(k => {
+        const el = this.tracks[k];
+        if (el) fijos[k] = el.scrollWidth <= el.clientWidth + 2;
+      });
+      this.setState({ fijos });
+    };
+    this.medir();
+    setTimeout(this.medir, 400);
+    window.addEventListener("resize", this.medir);
+  }
+
+  componentWillUnmount() { window.removeEventListener("resize", this.medir); }
+
+  wa(num, msg) { return "https://wa.me/" + num + "?text=" + encodeURIComponent(msg); }
+
+  scroll(id, dir) {
+    const el = this.tracks[id];
+    if (el) el.scrollBy({ left: dir * (el.clientWidth * 0.82), behavior: "smooth" });
+  }
+
+  renderVals() {
+    const tel1 = this.props.tel1 ?? "573002549527";
+    const tel2 = this.props.tel2 ?? "573112698201";
+    const sel = LINEAS.find(l => l.id === this.state.coleccion);
+    const para = this.state.nombre.trim();
+    const mensaje = "Hola Creaciones M&P, quiero un desayuno " + sel.nombre + " (" + sel.precio + ") para "
+      + (para ? para : "una sorpresa") + ", por " + this.state.ocasion.toLowerCase() + ". ¿Me confirman disponibilidad?";
+
+    return {
+      anio: this.props.anio ?? "2026",
+      notaEntrega: this.props.notaEntrega ?? "Entregas a domicilio · Personalizamos nombre, mensaje y color",
+      setImg: el => { if (el && el.dataset.src && el.getAttribute("src") !== el.dataset.src) el.setAttribute("src", el.dataset.src); },
+      lineas: LINEAS.map(l => ({
+        anchor: "l" + l.id, orden: l.orden, nombre: l.nombre, precio: l.precio, desc: l.desc, menu: l.menu,
+        ref: el => { if (el) this.tracks[l.id] = el; },
+        inerte: !!this.state.fijos[l.id],
+        prev: () => this.scroll(l.id, -1),
+        next: () => this.scroll(l.id, 1),
+        disenos: l.disenos.map(([nombre, src]) => ({
+          nombre, src,
+          wa: this.wa(tel1, "Hola Creaciones M&P, quiero el desayuno " + l.nombre + " — diseño " + nombre + " (" + l.precio + "). ¿Me confirman disponibilidad?"),
+        })),
+      })),
+      ocasiones: OCASIONES.map(o => ({
+        label: o, on: this.state.ocasion === o ? "1" : "0", set: () => this.setState({ ocasion: o }),
+      })),
+      picks: LINEAS.map(l => ({
+        label: l.nombre + " " + l.precio, on: this.state.coleccion === l.id ? "1" : "0",
+        set: () => this.setState({ coleccion: l.id }),
+      })),
+      nombre: this.state.nombre,
+      setNombre: e => this.setState({ nombre: e.target.value }),
+      mensaje,
+      waArmado: this.wa(tel1, mensaje),
+      waGeneral: this.wa(tel1, "Hola Creaciones M&P, vi sus desayunos y quiero pedir una sorpresa."),
+      waGeneral2: this.wa(tel2, "Hola Creaciones M&P, vi sus desayunos y quiero pedir una sorpresa."),
+      compartir: async () => {
+        const data = { title: "Creaciones M&P · Desayunos sorpresa", text: "Desayunos sorpresa a domicilio, desde $35.000", url: location.href };
+        if (navigator.share) { try { await navigator.share(data); return; } catch (e) { return; } }
+        try { await navigator.clipboard.writeText(location.href); alert("Enlace copiado"); } catch (e) { alert(location.href); }
+      },
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/styles.css">
+<script src="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/_ds_bundle.js"></script>
+<style>
+html,body{margin:0;padding:0;background:#0e0f19;height:100%;overscroll-behavior-y:none}
+a{color:var(--color-accent);text-decoration:none}
+a:hover{color:var(--color-accent-300)}
+.deck{height:100dvh;overflow-y:auto;scroll-snap-type:y mandatory;scroll-behavior:smooth;-webkit-overflow-scrolling:touch}
+.deck::-webkit-scrollbar{display:none}
+.scr{min-height:100dvh;scroll-snap-align:start;scroll-snap-stop:always;position:relative;display:flex;flex-direction:column;justify-content:flex-end;background:var(--color-bg)}
+.scr .bg,.scr .scrim{position:absolute}
+.bg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.scrim{position:absolute;inset:0;background:linear-gradient(180deg, rgba(14,15,25,.72) 0%, rgba(14,15,25,.18) 26%, rgba(14,15,25,.86) 62%, #0e0f19 100%)}
+.inner{position:relative;width:100%;max-width:620px;margin:0 auto;padding:0 22px 34px;box-sizing:border-box}
+.topbar{position:absolute;top:0;left:0;right:0;z-index:2;display:flex;justify-content:space-between;align-items:center;gap:12px;padding:18px 22px;max-width:620px;margin:0 auto;box-sizing:border-box}
+.kick{display:flex;align-items:center;gap:9px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--color-accent-200)}
+.kick::before{content:"";display:block;width:22px;height:2px;background:var(--color-accent);flex:none}
+.name{font-family:var(--font-heading);font-size:34px;line-height:1.04;letter-spacing:-.025em;margin:12px 0 8px}
+.desc{margin:0 0 16px;font-size:15px;line-height:1.5;color:var(--color-neutral-100)}
+.pricerow{display:flex;align-items:baseline;gap:12px;margin-bottom:16px}
+.pricerow b{font-family:var(--font-heading);font-size:40px;font-weight:500;letter-spacing:-.03em;line-height:1}
+.pricerow span{font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-200)}
+.thumbs{display:flex;gap:10px;overflow-x:auto;padding-bottom:4px;margin-bottom:16px;scrollbar-width:none}
+.thumbs::-webkit-scrollbar{display:none}
+.thumbs figure{margin:0;flex:none;width:104px}
+.thumbs img{width:104px;height:104px;object-fit:cover;border-radius:var(--radius-md);display:block;border:1px solid var(--color-neutral-800)}
+.thumbs figcaption{font-size:11.5px;color:var(--color-neutral-100);margin-top:6px;line-height:1.25}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-bottom:18px}
+.chips span{font-size:11.5px;color:var(--color-neutral-100);border:1px solid var(--color-neutral-700);border-radius:999px;padding:4px 10px;background:rgba(14,15,25,.5)}
+.wa{display:flex;align-items:center;justify-content:center;gap:9px;width:100%;box-sizing:border-box;padding:14px 18px;border-radius:var(--radius-lg);border:1px solid var(--color-accent);background:color-mix(in srgb, var(--color-accent-900) 70%, transparent);color:var(--color-text);font-family:var(--font-heading);font-size:16px;letter-spacing:-.01em}
+.wa:hover{background:color-mix(in srgb, var(--color-accent-800) 80%, transparent);color:var(--color-text)}
+@media (min-width:760px){.name{font-size:40px}.thumbs figure,.thumbs img{width:128px}.thumbs img{height:128px}}
+</style>
+</helmet>
+
+<div class="deck">
+
+  <section class="scr" data-screen-label="Portada">
+    <img class="bg lighten" src="img/110k-te-amo.jpg" alt="">
+    <div class="scrim"></div>
+    <div class="topbar"><div class="kick">Catálogo {{ anio }}</div></div>
+    <div class="inner">
+      <h1 style="font-family:var(--font-heading);font-size:42px;line-height:1;letter-spacing:-.03em;margin:0 0 12px">Creaciones<br>M&amp;P</h1>
+      <p style="margin:0 0 20px;font-size:16px;line-height:1.5;color:var(--color-neutral-100);max-width:34ch">Desayunos sorpresa a domicilio. Seis colecciones, desde $35.000. La sorpresa llega antes que el día.</p>
+      <div class="chips"><span>Cumpleaños</span><span>Aniversario</span><span>Amor y amistad</span><span>Solo porque sí</span></div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%20Creaciones%20M%26P%2C%20quiero%20pedir%20un%20desayuno%20sorpresa." target="_blank" rel="noopener">Pedir por WhatsApp · 300 2549527</a>
+      <div style="margin-top:18px;text-align:center;font-size:10.5px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-neutral-300)">Desliza hacia arriba</div>
+    </div>
+  </section>
+
+  <section class="scr" data-screen-label="Clásicos $35.000">
+    <img class="bg lighten" src="img/35k-azul-rey.jpg" alt="">
+    <div class="scrim"></div>
+    <div class="topbar"><div class="kick">Colección 01</div><div style="font-size:11px;letter-spacing:.16em;color:var(--color-neutral-200)">3 diseños</div></div>
+    <div class="inner">
+      <h2 class="name">Desayunos Clásicos</h2>
+      <div class="pricerow"><b>$35.000</b><span>Desayuno completo</span></div>
+      <p class="desc">Globo grande, base de globos cromados y bandeja con lo esencial. El detalle más pedido para una mañana de cumpleaños.</p>
+      <div class="thumbs">
+        <figure><img class="lighten" src="img/35k-azul-rey.jpg" alt="Azul Rey"><figcaption>Azul Rey</figcaption></figure>
+        <figure><img class="lighten" src="img/35k-rosado-pastel.jpg" alt="Rosado Pastel"><figcaption>Rosado Pastel</figcaption></figure>
+        <figure><img class="lighten" src="img/35k-negro-gold.jpg" alt="Negro Gold"><figcaption>Negro Gold</figcaption></figure>
+      </div>
+      <div class="chips"><span>Huevos con salchicha o revueltos</span><span>Sándwich</span><span>Fruta picada</span><span>Mini Nutella</span><span>Bebida</span><span>Cubiertos</span></div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20un%20desayuno%20Cl%C3%A1sico%20de%20%2435.000" target="_blank" rel="noopener">Quiero este · $35.000</a>
+    </div>
+  </section>
+
+  <section class="scr" data-screen-label="Premium $55.000">
+    <img class="bg lighten" src="img/55k-rojo-pasion.jpg" alt="">
+    <div class="scrim"></div>
+    <div class="topbar"><div class="kick">Colección 02</div><div style="font-size:11px;letter-spacing:.16em;color:var(--color-neutral-200)">4 diseños</div></div>
+    <div class="inner">
+      <h2 class="name">Desayunos Premium</h2>
+      <div class="pricerow"><b>$55.000</b><span>Desayuno completo</span></div>
+      <p class="desc">Bandeja hexagonal con moños, globo de estrellas y una mesa completa: sandwiches, jugo natural, fruta y dulces.</p>
+      <div class="thumbs">
+        <figure><img class="lighten" src="img/55k-negro-estrellas.jpg" alt="Negro Gold Estrellas"><figcaption>Negro Gold Estrellas</figcaption></figure>
+        <figure><img class="lighten" src="img/55k-rojo-pasion.jpg" alt="Rojo Pasión"><figcaption>Rojo Pasión</figcaption></figure>
+        <figure><img class="lighten" src="img/55k-azul-rey.jpg" alt="Azul Rey"><figcaption>Azul Rey</figcaption></figure>
+        <figure><img class="lighten" src="img/55k-rosado-princesa.jpg" alt="Rosado Princesa"><figcaption>Rosado Princesa</figcaption></figure>
+      </div>
+      <div class="chips"><span>Huevos rancheros</span><span>Sandwiches</span><span>Milo o chocolate</span><span>Jugo natural</span><span>Maní o masmelos</span></div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20un%20desayuno%20Premium%20de%20%2455.000" target="_blank" rel="noopener">Quiero este · $55.000</a>
+    </div>
+  </section>
+
+  <section class="scr" data-screen-label="Sorpresa Elegante $65.000">
+    <img class="bg lighten" src="img/65k-negro.jpg" alt="">
+    <div class="scrim"></div>
+    <div class="topbar"><div class="kick">Colección 03</div><div style="font-size:11px;letter-spacing:.16em;color:var(--color-neutral-200)">4 colores</div></div>
+    <div class="inner">
+      <h2 class="name">Sorpresa Elegante</h2>
+      <div class="pricerow"><b>$65.000</b><span>Desayuno completo</span></div>
+      <p class="desc">La mesa de la línea Premium sobre bandeja de madera, con globo burbuja y moño a juego. Elige el color.</p>
+      <div class="thumbs">
+        <figure><img class="lighten" src="img/65k-rojo.jpg" alt="Rojo"><figcaption>Rojo</figcaption></figure>
+        <figure><img class="lighten" src="img/65k-azul.jpg" alt="Azul"><figcaption>Azul</figcaption></figure>
+        <figure><img class="lighten" src="img/65k-negro.jpg" alt="Negro"><figcaption>Negro</figcaption></figure>
+        <figure><img class="lighten" src="img/65k-rosa.jpg" alt="Rosa"><figcaption>Rosa</figcaption></figure>
+      </div>
+      <div class="chips"><span>Huevos rancheros</span><span>Sandwiches</span><span>Milo o chocolate</span><span>Jugo natural</span><span>Maní o masmelos</span></div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20Desayuno%20Sorpresa%20Elegante%20de%20%2465.000" target="_blank" rel="noopener">Quiero este · $65.000</a>
+    </div>
+  </section>
+
+  <section class="scr" data-screen-label="Super Premium $75.000">
+    <img class="bg lighten" src="img/75k-rosa-pastel.jpg" alt="">
+    <div class="scrim"></div>
+    <div class="topbar"><div class="kick">Colección 04</div><div style="font-size:11px;letter-spacing:.16em;color:var(--color-accent-200)">El más completo</div></div>
+    <div class="inner">
+      <h2 class="name">Super Premium</h2>
+      <div class="pricerow"><b>$75.000</b><span>Desayuno completo</span></div>
+      <p class="desc">Mesa de madera tipo pícnic, bouquet de globos y la bandeja más surtida: fruta picada, crispetas y chocolates.</p>
+      <div class="thumbs">
+        <figure><img class="lighten" src="img/75k-rosa-pastel.jpg" alt="Rosa Pastel"><figcaption>Rosa Pastel</figcaption></figure>
+        <figure><img class="lighten" src="img/75k-rojo.jpg" alt="Rojo"><figcaption>Rojo</figcaption></figure>
+        <figure><img class="lighten" src="img/75k-negro-gold.jpg" alt="Negro Elegante Gold"><figcaption>Negro Elegante Gold</figcaption></figure>
+        <figure><img class="lighten" src="img/75k-rosado-lunares.jpg" alt="Rosado con lunares"><figcaption>Rosado con lunares</figcaption></figure>
+      </div>
+      <div class="chips"><span>Huevos rancheros</span><span>Sandwiches frescos</span><span>Milo o chocolate</span><span>Jugo con tapa domo</span><span>Fresa, kiwi y mango</span><span>Crispetas + maní</span><span>Chocolates</span><span>Mesa de madera</span></div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20un%20desayuno%20Super%20Premium%20de%20%2475.000" target="_blank" rel="noopener">Quiero este · $75.000</a>
+    </div>
+  </section>
+
+  <section class="scr" data-screen-label="Arco de globos $90.000">
+    <img class="bg lighten" src="img/90k-azul-marino.jpg" alt="">
+    <div class="scrim"></div>
+    <div class="topbar"><div class="kick">Colección 05</div><div style="font-size:11px;letter-spacing:.16em;color:var(--color-neutral-200)">4 ocasiones</div></div>
+    <div class="inner">
+      <h2 class="name">Arco de globos</h2>
+      <div class="pricerow"><b>$90.000</b><span>Con placa personalizada</span></div>
+      <p class="desc">Bandeja blanca con arco de globos y placa con el nombre y el mensaje que elijas.</p>
+      <div class="thumbs">
+        <figure><img class="lighten" src="img/90k-azul-marino.jpg" alt="Azul Marino"><figcaption>Azul Marino · Cumpleaños</figcaption></figure>
+        <figure><img class="lighten" src="img/90k-rosa-dorado.jpg" alt="Rosa con Dorado"><figcaption>Rosa y Dorado · Cumpleaños</figcaption></figure>
+        <figure><img class="lighten" src="img/90k-rojo-aniversario.jpg" alt="Rojo"><figcaption>Rojo · Aniversario</figcaption></figure>
+        <figure><img class="lighten" src="img/90k-rosa-amistad.jpg" alt="Rosa"><figcaption>Rosa · Amor y amistad</figcaption></figure>
+      </div>
+      <div class="chips"><span>Huevos rancheros</span><span>Sandwiches</span><span>Milo o chocolate</span><span>Jugo natural</span><span>Fruta picada</span><span>Maní</span><span>Gomitas</span></div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20con%20Arco%20de%20globos%20de%20%2490.000" target="_blank" rel="noopener">Quiero este · $90.000</a>
+    </div>
+  </section>
+
+  <section class="scr" data-screen-label="Lujo $110.000">
+    <img class="bg lighten" src="img/110k-negro-gold.jpg" alt="">
+    <div class="scrim"></div>
+    <div class="topbar"><div class="kick">Colección 06</div><div style="font-size:11px;letter-spacing:.16em;color:var(--color-accent-200)">Lo más alto de la carta</div></div>
+    <div class="inner">
+      <h2 class="name">Colección de Lujo</h2>
+      <div class="pricerow"><b>$110.000</b><span>Con mensaje impreso</span></div>
+      <p class="desc">Globo burbuja con globos internos, placa con mensaje y la bandeja más completa: Ferrero Rocher, pastelito y sandwiches de tomate.</p>
+      <div class="thumbs">
+        <figure><img class="lighten" src="img/110k-te-amo.jpg" alt="Rosa y Dorado"><figcaption>Te Amo Infinitamente</figcaption></figure>
+        <figure><img class="lighten" src="img/110k-azul-noche.jpg" alt="Azul Noche"><figcaption>Eres Mi Persona Favorita</figcaption></figure>
+        <figure><img class="lighten" src="img/110k-rojo-negro.jpg" alt="Rojo Negro"><figcaption>Siempre a tu Lado</figcaption></figure>
+        <figure><img class="lighten" src="img/110k-negro-gold.jpg" alt="Negro y Gold"><figcaption>Eres el Amor de mi Vida</figcaption></figure>
+      </div>
+      <div class="chips"><span>Huevos rancheros</span><span>Sandwiches de tomate</span><span>Milo o chocolate</span><span>Jugo natural</span><span>Fruta picada</span><span>Ferrero Rocher</span><span>Pastelito</span><span>Gomitas</span></div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20un%20desayuno%20de%20la%20Colecci%C3%B3n%20de%20Lujo%20de%20%24110.000" target="_blank" rel="noopener">Quiero este · $110.000</a>
+    </div>
+  </section>
+
+  <section class="scr" data-screen-label="Cómo pedir y contacto" style="justify-content:center">
+    <div class="inner" style="padding-top:34px">
+      <div class="kick" style="margin-bottom:14px">Cómo pedir</div>
+      <h2 class="name" style="margin-top:0">Tres pasos y listo</h2>
+      <div style="display:flex;flex-direction:column;gap:14px;margin:18px 0 24px">
+        <div style="display:flex;gap:14px;align-items:flex-start;border-left:2px solid var(--color-accent-700);padding-left:14px">
+          <div style="font-family:var(--font-heading);font-size:22px;color:var(--color-accent-300);line-height:1.1;width:30px;flex:none">01</div>
+          <div><div style="font-family:var(--font-heading);font-size:16px;margin-bottom:3px">Elige tu diseño</div><div style="font-size:13.5px;color:var(--color-neutral-100);line-height:1.5">Toca el botón de la colección que te gustó. El mensaje se abre escrito en WhatsApp.</div></div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;border-left:2px solid var(--color-accent-700);padding-left:14px">
+          <div style="font-family:var(--font-heading);font-size:22px;color:var(--color-accent-300);line-height:1.1;width:30px;flex:none">02</div>
+          <div><div style="font-family:var(--font-heading);font-size:16px;margin-bottom:3px">Personalízalo</div><div style="font-size:13.5px;color:var(--color-neutral-100);line-height:1.5">Dinos el nombre, el mensaje del globo y el color. Ajustamos el menú si hay preferencias.</div></div>
+        </div>
+        <div style="display:flex;gap:14px;align-items:flex-start;border-left:2px solid var(--color-accent-700);padding-left:14px">
+          <div style="font-family:var(--font-heading);font-size:22px;color:var(--color-accent-300);line-height:1.1;width:30px;flex:none">03</div>
+          <div><div style="font-family:var(--font-heading);font-size:16px;margin-bottom:3px">Confirma la entrega</div><div style="font-size:13.5px;color:var(--color-neutral-100);line-height:1.5">Dirección y hora. Pedidos con 24 horas de anticipación, a domicilio en la ciudad.</div></div>
+        </div>
+      </div>
+      <a class="wa" href="https://wa.me/573002549527?text=Hola%20Creaciones%20M%26P%2C%20quiero%20pedir%20un%20desayuno%20sorpresa." target="_blank" rel="noopener" style="margin-bottom:10px">WhatsApp 300 2549527</a>
+      <a class="wa" href="https://wa.me/573112698201?text=Hola%20Creaciones%20M%26P%2C%20quiero%20pedir%20un%20desayuno%20sorpresa." target="_blank" rel="noopener" style="border-color:var(--color-neutral-700);background:transparent">WhatsApp 311 2698201</a>
+      <p style="margin:18px 0 0;text-align:center;font-size:12px;color:var(--color-neutral-300)">{{ notaEntrega }}</p>
+    </div>
+  </section>
+
+</div>
+
+<template id="__bundler_thumbnail">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400"><rect width="400" height="400" fill="#161826"/><text x="200" y="232" font-family="Inter, sans-serif" font-size="150" font-weight="500" fill="#9184d9" text-anchor="middle">M&amp;P</text></svg>
+</template>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;anio&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;2026&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;notaEntrega&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Entregas a domicilio · Pedidos con 24 h de anticipación&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      anio: this.props.anio ?? "2026",
+      notaEntrega: this.props.notaEntrega ?? "Entregas a domicilio · Pedidos con 24 h de anticipación",
+    };
+  }
+}
+</script>
+</body>
+</html>

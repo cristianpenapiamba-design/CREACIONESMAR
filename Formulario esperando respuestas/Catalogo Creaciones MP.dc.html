@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/styles.css">
+<script src="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/_ds_bundle.js"></script>
+<style>
+@keyframes noct-rise { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: none; } }
+html { scroll-behavior: smooth; }
+body { margin: 0; }
+a { color: var(--color-accent); }
+a:hover { color: var(--color-accent-300); }
+</style>
+</helmet>
+
+<div style="background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);min-height:100vh">
+
+  <div style="background:var(--color-section);padding:9px 20px;text-align:center;font-size:12px;letter-spacing:.09em;text-transform:uppercase;color:var(--color-neutral-200)">{{ promo }}</div>
+
+  <header style="position:sticky;top:0;z-index:20;background:color-mix(in srgb, var(--color-bg) 88%, transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--color-divider)">
+    <div style="max-width:1140px;margin:0 auto;padding:14px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div style="display:flex;flex-direction:column;line-height:1.05">
+        <span style="font-family:var(--font-heading);font-size:19px;letter-spacing:-.01em">Creaciones M&amp;P</span>
+        <span style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-500)">Detalles que despiertan emociones</span>
+      </div>
+      <nav style="display:flex;align-items:center;gap:4px;flex-wrap:wrap">
+        <a href="#coleccion-35" style="padding:6px 10px;border-radius:var(--radius-sm);font-size:13px;color:var(--color-neutral-300);text-decoration:none" style-hover="background:var(--color-neutral-900);color:var(--color-text)">Clásicos</a>
+        <a href="#coleccion-55" style="padding:6px 10px;border-radius:var(--radius-sm);font-size:13px;color:var(--color-neutral-300);text-decoration:none" style-hover="background:var(--color-neutral-900);color:var(--color-text)">Premium</a>
+        <a href="#coleccion-75" style="padding:6px 10px;border-radius:var(--radius-sm);font-size:13px;color:var(--color-neutral-300);text-decoration:none" style-hover="background:var(--color-neutral-900);color:var(--color-text)">Super Premium</a>
+        <a href="#coleccion-110" style="padding:6px 10px;border-radius:var(--radius-sm);font-size:13px;color:var(--color-neutral-300);text-decoration:none" style-hover="background:var(--color-neutral-900);color:var(--color-text)">Lujo</a>
+        <a href="#pedido" style="padding:6px 10px;border-radius:var(--radius-sm);font-size:13px;color:var(--color-neutral-300);text-decoration:none" style-hover="background:var(--color-neutral-900);color:var(--color-text)">Cómo pedir</a>
+        <a class="btn btn-primary" href="https://wa.me/573002549527?text=Hola%20Creaciones%20M%26P%2C%20quiero%20informaci%C3%B3n%20sobre%20los%20desayunos%20sorpresa." target="_blank" rel="noopener" style="margin-left:6px">Pedir por WhatsApp</a>
+      </nav>
+    </div>
+  </header>
+
+  <section style="max-width:1140px;margin:0 auto;padding:72px 24px 56px;display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:48px;align-items:center">
+    <div style="animation:noct-rise .7s ease both">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:18px">
+        <span style="display:block;width:34px;height:2px;background:var(--color-accent)"></span>
+        <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300)">Desayunos sorpresa a domicilio</span>
+      </div>
+      <h1 style="font-size:clamp(38px,5.2vw,60px);line-height:1.04;margin:0 0 18px;letter-spacing:-.025em">La sorpresa llega<br>antes que el día.</h1>
+      <p style="font-size:17px;line-height:1.6;color:var(--color-neutral-300);max-width:46ch;margin:0 0 26px;text-wrap:pretty">Seis colecciones de desayunos con globos, desde $35.000 hasta $110.000. Cada bandeja se arma el mismo día, se personaliza con el nombre y el color que elijas, y llega a la puerta.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:30px">
+        <a class="btn btn-primary" href="https://wa.me/573002549527?text=Hola%20Creaciones%20M%26P%2C%20quiero%20pedir%20un%20desayuno%20sorpresa." target="_blank" rel="noopener">Pedir ahora por WhatsApp</a>
+        <a class="btn btn-secondary" href="#colecciones">Ver las colecciones</a>
+      </div>
+      <div style="display:flex;gap:26px;flex-wrap:wrap;font-size:12.5px;color:var(--color-neutral-400)">
+        <span>Entrega a domicilio en la ciudad</span>
+        <span>Productos frescos</span>
+        <span>Personaliza tu detalle</span>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;animation:noct-rise .9s ease both">
+      <img class="lighten" src="img/110k-te-amo.jpg" alt="Colección de Lujo — Te Amo Infinitamente" style="width:100%;height:230px;object-fit:cover;border-radius:var(--radius-lg);box-shadow:var(--shadow-md);grid-row:span 2">
+      <img class="lighten" src="img/55k-rojo-pasion.jpg" alt="Desayuno Premium Rojo Pasión" style="width:100%;height:109px;object-fit:cover;border-radius:var(--radius-lg);box-shadow:var(--shadow-md)">
+      <img class="lighten" src="img/90k-azul-marino.jpg" alt="Desayuno Azul Marino" style="width:100%;height:109px;object-fit:cover;border-radius:var(--radius-lg);box-shadow:var(--shadow-md)">
+    </div>
+  </section>
+
+  <div style="border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);background:linear-gradient(180deg, var(--color-neutral-900), transparent)">
+    <div style="max-width:1140px;margin:0 auto;padding:26px 24px;display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:22px">
+      <div>
+        <div style="font-family:var(--font-heading);font-size:26px;color:var(--color-accent-300);line-height:1.1">23</div>
+        <div style="font-size:12.5px;color:var(--color-neutral-400);margin-top:2px">diseños listos para pedir</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-heading);font-size:26px;color:var(--color-accent-300);line-height:1.1">6</div>
+        <div style="font-size:12.5px;color:var(--color-neutral-400);margin-top:2px">colecciones, de $35.000 a $110.000</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-heading);font-size:26px;color:var(--color-accent-300);line-height:1.1">24 h</div>
+        <div style="font-size:12.5px;color:var(--color-neutral-400);margin-top:2px">de anticipación para tu pedido</div>
+      </div>
+      <div>
+        <div style="font-family:var(--font-heading);font-size:26px;color:var(--color-accent-300);line-height:1.1">A domicilio</div>
+        <div style="font-size:12.5px;color:var(--color-neutral-400);margin-top:2px">entrega en toda la ciudad</div>
+      </div>
+    </div>
+  </div>
+
+  <section id="colecciones" style="max-width:1140px;margin:0 auto;padding:56px 24px 10px">
+    <div style="display:flex;align-items:flex-end;justify-content:space-between;gap:24px;flex-wrap:wrap;margin-bottom:22px">
+      <div>
+        <h2 style="margin:0 0 6px;font-size:30px">Elige por presupuesto</h2>
+        <p style="margin:0;color:var(--color-neutral-400);font-size:14px">Todas las líneas incluyen globos, bandeja y cubiertos. Lo que cambia es el tamaño de la bandeja y lo que va dentro.</p>
+      </div>
+    </div>
+    <div style="display:flex;gap:8px;flex-wrap:wrap">
+      <a href="#coleccion-35" class="tag tag-outline" style="text-decoration:none;font-size:13px;padding:7px 13px">$35.000 · Clásicos</a>
+      <a href="#coleccion-55" class="tag tag-outline" style="text-decoration:none;font-size:13px;padding:7px 13px">$55.000 · Premium</a>
+      <a href="#coleccion-65" class="tag tag-outline" style="text-decoration:none;font-size:13px;padding:7px 13px">$65.000 · Sorpresa Elegante</a>
+      <a href="#coleccion-75" class="tag tag-outline" style="text-decoration:none;font-size:13px;padding:7px 13px">$75.000 · Super Premium</a>
+      <a href="#coleccion-90" class="tag tag-outline" style="text-decoration:none;font-size:13px;padding:7px 13px">$90.000 · Arco de globos</a>
+      <a href="#coleccion-110" class="tag tag-accent" style="text-decoration:none;font-size:13px;padding:7px 13px">$110.000 · Lujo</a>
+    </div>
+  </section>
+
+  <section id="coleccion-35" style="max-width:1140px;margin:0 auto;padding:48px 24px;scroll-margin-top:80px">
+    <div style="display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--color-divider);margin-bottom:26px">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+          <span style="display:block;width:22px;height:2px;background:var(--color-accent)"></span>
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300)">Colección 01</span>
+        </div>
+        <h2 style="margin:0;font-size:34px">Desayunos Clásicos</h2>
+        <p style="margin:8px 0 0;color:var(--color-neutral-400);font-size:14px;max-width:52ch">El detalle más pedido para una mañana de cumpleaños: globo grande, base de globos cromados y bandeja con lo esencial.</p>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:var(--font-heading);font-size:40px;line-height:1;letter-spacing:-.02em">$35.000</div>
+        <div style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-500);margin-top:4px">3 diseños</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:18px;margin-bottom:26px">
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Azul%20Rey%20de%20%2435.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/35k-azul-rey.jpg" alt="Azul Rey" style="width:100%;height:260px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Azul Rey</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Rosado%20Pastel%20de%20%2435.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/35k-rosado-pastel.jpg" alt="Rosado Pastel" style="width:100%;height:260px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rosado Pastel</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Negro%20Gold%20de%20%2435.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/35k-negro-gold.jpg" alt="Negro Gold" style="width:100%;height:260px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Negro Gold</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+    </div>
+    <div style="background:var(--color-neutral-900);border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:20px 22px">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:12px">Incluye</div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px 26px;font-size:14px">
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Huevos con salchicha o revueltos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Sándwich</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Fruta picada</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Mini Nutella</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Cubiertos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Bebida</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="coleccion-55" style="max-width:1140px;margin:0 auto;padding:48px 24px;scroll-margin-top:80px">
+    <div style="display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--color-divider);margin-bottom:26px">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+          <span style="display:block;width:22px;height:2px;background:var(--color-accent)"></span>
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300)">Colección 02</span>
+        </div>
+        <h2 style="margin:0;font-size:34px">Desayunos Premium</h2>
+        <p style="margin:8px 0 0;color:var(--color-neutral-400);font-size:14px;max-width:52ch">Bandeja hexagonal decorada con moños, globo estampado de estrellas y una mesa completa: sandwiches, bebida, fruta y dulces.</p>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:var(--font-heading);font-size:40px;line-height:1;letter-spacing:-.02em">$55.000</div>
+        <div style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-500);margin-top:4px">4 diseños</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:26px">
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Premium%20Negro%20Gold%20Estrellas%20de%20%2455.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/55k-negro-estrellas.jpg" alt="Negro Gold Estrellas" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Negro Gold Estrellas</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Premium%20Rojo%20Pasi%C3%B3n%20de%20%2455.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/55k-rojo-pasion.jpg" alt="Rojo Pasión" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rojo Pasión</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Premium%20Azul%20Rey%20de%20%2455.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/55k-azul-rey.jpg" alt="Azul Rey" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Azul Rey</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Premium%20Rosado%20Princesa%20de%20%2455.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/55k-rosado-princesa.jpg" alt="Rosado Princesa" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rosado Princesa</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+    </div>
+    <div style="background:var(--color-neutral-900);border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:20px 22px">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:12px">Incluye</div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px 26px;font-size:14px">
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Huevos rancheros o revueltos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Sandwiches</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Milo o chocolate</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Jugo natural</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Manzana</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Galletas</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Maní o masmelos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Cubiertos</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="coleccion-65" style="max-width:1140px;margin:0 auto;padding:48px 24px;scroll-margin-top:80px">
+    <div style="display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--color-divider);margin-bottom:26px">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+          <span style="display:block;width:22px;height:2px;background:var(--color-accent)"></span>
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300)">Colección 03</span>
+        </div>
+        <h2 style="margin:0;font-size:34px">Desayuno Sorpresa Elegante</h2>
+        <p style="margin:8px 0 0;color:var(--color-neutral-400);font-size:14px;max-width:52ch">La misma mesa de la línea Premium sobre bandeja de madera, con globo burbuja y moño a juego. Precio especial.</p>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:var(--font-heading);font-size:40px;line-height:1;letter-spacing:-.02em">$65.000</div>
+        <div style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-500);margin-top:4px">4 colores</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-bottom:26px">
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20Desayuno%20Sorpresa%20Elegante%20Rojo%20de%20%2465.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/65k-rojo.jpg" alt="Rojo" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rojo</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20Desayuno%20Sorpresa%20Elegante%20Azul%20de%20%2465.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/65k-azul.jpg" alt="Azul" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Azul</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20Desayuno%20Sorpresa%20Elegante%20Negro%20de%20%2465.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/65k-negro.jpg" alt="Negro" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Negro</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20Desayuno%20Sorpresa%20Elegante%20Rosa%20de%20%2465.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/65k-rosa.jpg" alt="Rosa" style="width:100%;height:200px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rosa</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+    </div>
+    <div style="background:var(--color-neutral-900);border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:20px 22px">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:12px">Nuestro menú incluye</div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px 26px;font-size:14px">
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Huevos rancheros o revueltos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Sandwiches</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Milo o chocolate</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Jugo natural</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Manzana</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Galletas</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Maní o masmelos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Cubiertos</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="coleccion-75" style="max-width:1140px;margin:0 auto;padding:48px 24px;scroll-margin-top:80px">
+    <div style="display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--color-divider);margin-bottom:26px">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+          <span style="display:block;width:22px;height:2px;background:var(--color-accent)"></span>
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300)">Colección 04</span>
+        </div>
+        <h2 style="margin:0;font-size:34px">Super Premium</h2>
+        <p style="margin:8px 0 0;color:var(--color-neutral-400);font-size:14px;max-width:52ch">Mesa de madera tipo pícnic, bouquet de globos y la bandeja más surtida: fruta picada, crispetas, galletas y chocolates.</p>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:var(--font-heading);font-size:40px;line-height:1;letter-spacing:-.02em">$75.000</div>
+        <div style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-500);margin-top:4px">4 diseños</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;margin-bottom:26px">
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Super%20Premium%20Rosa%20Pastel%20de%20%2475.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/75k-rosa-pastel.jpg" alt="Rosa Pastel" style="width:100%;height:270px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rosa Pastel</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Super%20Premium%20Rojo%20de%20%2475.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/75k-rojo.jpg" alt="Rojo" style="width:100%;height:270px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rojo</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Super%20Premium%20Negro%20Elegante%20Gold%20de%20%2475.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/75k-negro-gold.jpg" alt="Negro Elegante Gold" style="width:100%;height:270px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Negro Elegante Gold</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Super%20Premium%20Rosado%20Brillante%20con%20Lunares%20de%20%2475.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/75k-rosado-lunares.jpg" alt="Rosado Brillante con Lunares" style="width:100%;height:270px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="display:flex;align-items:center;justify-content:space-between;gap:8px;padding:11px 4px 3px">
+          <span style="font-family:var(--font-heading);font-size:15px">Rosado Brillante con Lunares</span>
+          <span style="font-size:12px;color:var(--color-accent-300)">Pedir →</span>
+        </div>
+      </a>
+    </div>
+    <div style="background:var(--color-neutral-900);border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:20px 22px">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:12px">Incluye tu desayuno</div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:7px 26px;font-size:14px">
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Huevos rancheros o revueltos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Sandwiches frescos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Milo o chocolate caliente</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Jugo natural en vaso con tapa domo</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Fruta picada: fresa, kiwi, mango</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Crispetas + Maní tostado</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Galletas + chocolates</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Cubiertos incluidos</li>
+      </ul>
+      <p style="margin:14px 0 0;font-size:12.5px;color:var(--color-neutral-500)">Todas nuestras bandejas incluyen mesa de madera tipo pícnic.</p>
+    </div>
+  </section>
+
+  <section id="coleccion-90" style="max-width:1140px;margin:0 auto;padding:48px 24px;scroll-margin-top:80px">
+    <div style="display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid var(--color-divider);margin-bottom:26px">
+      <div>
+        <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+          <span style="display:block;width:22px;height:2px;background:var(--color-accent)"></span>
+          <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300)">Colección 05</span>
+        </div>
+        <h2 style="margin:0;font-size:34px">Arco de globos</h2>
+        <p style="margin:8px 0 0;color:var(--color-neutral-400);font-size:14px;max-width:52ch">Bandeja blanca con arco de globos y placa personalizada. La misma línea sirve para cumpleaños, aniversario y amor y amistad.</p>
+      </div>
+      <div style="text-align:right">
+        <div style="font-family:var(--font-heading);font-size:40px;line-height:1;letter-spacing:-.02em">$90.000</div>
+        <div style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-500);margin-top:4px">4 ocasiones</div>
+      </div>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;margin-bottom:26px">
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Azul%20Marino%20de%20%2490.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/90k-azul-marino.jpg" alt="Azul Marino" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="padding:11px 4px 3px">
+          <div style="font-family:var(--font-heading);font-size:15px">Azul Marino</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-500);margin-top:2px">Feliz Cumpleaños</div>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Rosa%20con%20Dorado%20de%20%2490.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/90k-rosa-dorado.jpg" alt="Rosa con Dorado" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="padding:11px 4px 3px">
+          <div style="font-family:var(--font-heading);font-size:15px">Rosa con Dorado</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-500);margin-top:2px">Feliz Cumpleaños</div>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Rojo%20Feliz%20Aniversario%20de%20%2490.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/90k-rojo-aniversario.jpg" alt="Rojo — Feliz Aniversario" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="padding:11px 4px 3px">
+          <div style="font-family:var(--font-heading);font-size:15px">Rojo</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-500);margin-top:2px">Feliz Aniversario · Te amo</div>
+        </div>
+      </a>
+      <a class="card" href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Rosa%20D%C3%ADa%20del%20Amor%20y%20la%20Amistad%20de%20%2490.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;transition:transform .18s ease,box-shadow .18s ease" style-hover="transform:translateY(-3px);box-shadow:var(--shadow-md)">
+        <img class="lighten" src="img/90k-rosa-amistad.jpg" alt="Rosa — Feliz Día del Amor y la Amistad" style="width:100%;height:250px;object-fit:cover;border-radius:var(--radius-md)">
+        <div style="padding:11px 4px 3px">
+          <div style="font-family:var(--font-heading);font-size:15px">Rosa</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-500);margin-top:2px">Feliz Día del Amor y la Amistad</div>
+        </div>
+      </a>
+    </div>
+    <div style="background:var(--color-neutral-900);border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:20px 22px">
+      <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-400);margin-bottom:12px">Menú incluye</div>
+      <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px 26px;font-size:14px">
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Huevos rancheros o revueltos</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Sandwiches</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Milo o chocolate</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Jugo natural</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Fruta picada</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Maní</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Galletas</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Gomitas</li>
+        <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-500);flex:none"></span>Cubiertos incluidos</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="coleccion-110" style="background:linear-gradient(180deg, var(--color-section) 0%, color-mix(in srgb, var(--color-section) 55%, var(--color-bg)) 100%);border-top:1px solid var(--color-divider);border-bottom:1px solid var(--color-divider);scroll-margin-top:64px">
+    <div style="max-width:1140px;margin:0 auto;padding:56px 24px">
+      <div style="display:flex;align-items:flex-end;gap:20px;flex-wrap:wrap;justify-content:space-between;padding-bottom:16px;border-bottom:1px solid color-mix(in srgb, var(--color-neutral-100) 20%, transparent);margin-bottom:26px">
+        <div>
+          <div style="display:flex;align-items:center;gap:9px;margin-bottom:9px">
+            <span style="display:block;width:22px;height:2px;background:var(--color-accent-300)"></span>
+            <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-200)">Colección 06 · lo más alto de la carta</span>
+          </div>
+          <h2 style="margin:0;font-size:34px">Colección de Lujo</h2>
+          <p style="margin:8px 0 0;color:var(--color-neutral-200);font-size:14px;max-width:52ch">Globo burbuja con globos internos, placa con mensaje y la bandeja más completa: Ferrero Rocher, pastelito y sandwiches de tomate.</p>
+        </div>
+        <div style="text-align:right">
+          <div style="font-family:var(--font-heading);font-size:40px;line-height:1;letter-spacing:-.02em">$110.000</div>
+          <div style="font-size:11.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-300);margin-top:4px">Precio por colección</div>
+        </div>
+      </div>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:18px;margin-bottom:26px">
+        <a href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Te%20Amo%20Infinitamente%20de%20%24110.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;background:color-mix(in srgb, var(--color-bg) 55%, transparent);border:1px solid color-mix(in srgb, var(--color-neutral-100) 18%, transparent);border-radius:var(--radius-lg);transition:transform .18s ease" style-hover="transform:translateY(-3px)">
+          <img class="lighten" src="img/110k-te-amo.jpg" alt="Te Amo Infinitamente" style="width:100%;height:235px;object-fit:cover;border-radius:var(--radius-md)">
+          <div style="padding:11px 4px 3px">
+            <div style="font-family:var(--font-heading);font-size:15px">Rosa &amp; Dorado</div>
+            <div style="font-size:12.5px;color:var(--color-neutral-300);margin-top:2px">Te Amo Infinitamente</div>
+          </div>
+        </a>
+        <a href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Azul%20Noche%20de%20%24110.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;background:color-mix(in srgb, var(--color-bg) 55%, transparent);border:1px solid color-mix(in srgb, var(--color-neutral-100) 18%, transparent);border-radius:var(--radius-lg);transition:transform .18s ease" style-hover="transform:translateY(-3px)">
+          <img class="lighten" src="img/110k-azul-noche.jpg" alt="Azul Noche" style="width:100%;height:235px;object-fit:cover;border-radius:var(--radius-md)">
+          <div style="padding:11px 4px 3px">
+            <div style="font-family:var(--font-heading);font-size:15px">Azul Noche</div>
+            <div style="font-size:12.5px;color:var(--color-neutral-300);margin-top:2px">Eres Mi Persona Favorita</div>
+          </div>
+        </a>
+        <a href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Rojo%20Negro%20de%20%24110.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;background:color-mix(in srgb, var(--color-bg) 55%, transparent);border:1px solid color-mix(in srgb, var(--color-neutral-100) 18%, transparent);border-radius:var(--radius-lg);transition:transform .18s ease" style-hover="transform:translateY(-3px)">
+          <img class="lighten" src="img/110k-rojo-negro.jpg" alt="Rojo Negro" style="width:100%;height:235px;object-fit:cover;border-radius:var(--radius-md)">
+          <div style="padding:11px 4px 3px">
+            <div style="font-family:var(--font-heading);font-size:15px">Rojo Negro</div>
+            <div style="font-size:12.5px;color:var(--color-neutral-300);margin-top:2px">Siempre a tu Lado</div>
+          </div>
+        </a>
+        <a href="https://wa.me/573002549527?text=Hola%2C%20quiero%20el%20desayuno%20Negro%20%26%20Gold%20de%20%24110.000" target="_blank" rel="noopener" style="text-decoration:none;color:inherit;padding:10px;display:block;background:color-mix(in srgb, var(--color-bg) 55%, transparent);border:1px solid color-mix(in srgb, var(--color-neutral-100) 18%, transparent);border-radius:var(--radius-lg);transition:transform .18s ease" style-hover="transform:translateY(-3px)">
+          <img class="lighten" src="img/110k-negro-gold.jpg" alt="Negro &amp; Gold" style="width:100%;height:235px;object-fit:cover;border-radius:var(--radius-md)">
+          <div style="padding:11px 4px 3px">
+            <div style="font-family:var(--font-heading);font-size:15px">Negro &amp; Gold</div>
+            <div style="font-size:12.5px;color:var(--color-neutral-300);margin-top:2px">Eres el Amor de mi Vida</div>
+          </div>
+        </a>
+      </div>
+      <div style="background:color-mix(in srgb, var(--color-bg) 55%, transparent);border:1px solid color-mix(in srgb, var(--color-neutral-100) 18%, transparent);border-radius:var(--radius-lg);padding:20px 22px">
+        <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-300);margin-bottom:12px">Incluye</div>
+        <ul style="list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:7px 26px;font-size:14px">
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Huevos rancheros o revueltos</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Sandwiches de tomate</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Milo o chocolate</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Jugo natural</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Fruta picada</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Maní</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Gomitas</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Chocolate Ferrero Rocher</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Pastelito</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Galletas</li>
+          <li style="display:flex;gap:9px;align-items:baseline"><span style="width:4px;height:4px;border-radius:50%;background:var(--color-accent-300);flex:none"></span>Cubiertos</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <sc-if value="{{ mostrarComparativa }}" hint-placeholder-val="{{ true }}">
+  <section style="max-width:1140px;margin:0 auto;padding:56px 24px">
+    <h2 style="margin:0 0 6px;font-size:30px">Compara las seis líneas</h2>
+    <p style="margin:0 0 22px;color:var(--color-neutral-400);font-size:14px">Lo que cambia de una a otra, en una sola tabla.</p>
+    <div style="overflow-x:auto">
+      <table class="table" style="width:100%;min-width:640px">
+        <thead>
+          <tr>
+            <th>Colección</th>
+            <th>Precio</th>
+            <th>Diseños</th>
+            <th>Qué la distingue</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Clásicos</td><td>$35.000</td><td>3</td><td>Globo grande, base cromada, bandeja esencial</td></tr>
+          <tr><td>Premium</td><td>$55.000</td><td>4</td><td>Bandeja hexagonal, jugo, manzana y dulces</td></tr>
+          <tr><td>Sorpresa Elegante</td><td>$65.000</td><td>4</td><td>Bandeja de madera y globo burbuja</td></tr>
+          <tr><td>Super Premium</td><td>$75.000</td><td>4</td><td>Mesa de madera tipo pícnic, fruta picada y crispetas</td></tr>
+          <tr><td>Arco de globos</td><td>$90.000</td><td>4</td><td>Arco de globos con placa personalizada</td></tr>
+          <tr><td>Lujo</td><td>$110.000</td><td>4</td><td>Ferrero Rocher, pastelito y mensaje impreso</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+  </sc-if>
+
+  <section id="pedido" style="border-top:1px solid var(--color-divider);scroll-margin-top:80px">
+    <div style="max-width:1140px;margin:0 auto;padding:56px 24px">
+      <h2 style="margin:0 0 26px;font-size:30px">Cómo pedir</h2>
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px">
+        <div style="border-left:2px solid var(--color-accent-700);padding:2px 0 2px 16px">
+          <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:6px">Paso 01</div>
+          <h4 style="margin:0 0 5px">Elige tu diseño</h4>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-400)">Toca cualquier foto del catálogo y el pedido se abre en WhatsApp con el nombre y el precio ya escritos.</p>
+        </div>
+        <div style="border-left:2px solid var(--color-accent-700);padding:2px 0 2px 16px">
+          <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:6px">Paso 02</div>
+          <h4 style="margin:0 0 5px">Personalízalo</h4>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-400)">Dinos el nombre, el mensaje del globo y el color. Ajustamos el menú si hay alguna preferencia.</p>
+        </div>
+        <div style="border-left:2px solid var(--color-accent-700);padding:2px 0 2px 16px">
+          <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300);margin-bottom:6px">Paso 03</div>
+          <h4 style="margin:0 0 5px">Confirma la entrega</h4>
+          <p style="margin:0;font-size:14px;color:var(--color-neutral-400)">Dirección y hora. Pedidos con 24 horas de anticipación; entregamos a domicilio en la ciudad.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section style="max-width:1140px;margin:0 auto;padding:10px 24px 56px">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px">
+      <div class="card" style="padding:18px 20px">
+        <div class="card-kicker">Personalización</div>
+        <div class="card-title">Nombre, mensaje y color</div>
+        <div class="card-body">Cada globo se rotula con el mensaje que elijas: Feliz Cumpleaños, Feliz Aniversario, Te Amo, Feliz Día del Amor y la Amistad.</div>
+      </div>
+      <div class="card" style="padding:18px 20px">
+        <div class="card-kicker">Frescura</div>
+        <div class="card-title">Se arma el mismo día</div>
+        <div class="card-body">Huevos, sandwiches, fruta y jugo natural se preparan la mañana de la entrega, no antes.</div>
+      </div>
+      <div class="card" style="padding:18px 20px">
+        <div class="card-kicker">Entrega</div>
+        <div class="card-title">A domicilio en la ciudad</div>
+        <div class="card-body">Coordinamos hora exacta para que la sorpresa llegue cuando tiene que llegar. Pide con 24 horas de anticipación.</div>
+      </div>
+    </div>
+  </section>
+
+  <section style="border-top:1px solid var(--color-divider);background:linear-gradient(180deg, transparent, var(--color-neutral-900))">
+    <div style="max-width:1140px;margin:0 auto;padding:64px 24px;text-align:center">
+      <div style="display:flex;align-items:center;justify-content:center;gap:10px;margin-bottom:16px">
+        <span style="display:block;width:28px;height:2px;background:var(--color-accent)"></span>
+        <span style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-300)">Contáctanos y ordena</span>
+        <span style="display:block;width:28px;height:2px;background:var(--color-accent)"></span>
+      </div>
+      <h2 style="margin:0 0 12px;font-size:clamp(28px,4vw,42px)">Cada detalle pensado para regalar emociones.</h2>
+      <p style="margin:0 auto 26px;max-width:48ch;color:var(--color-neutral-400);font-size:15px">Escríbenos y armamos tu desayuno hoy mismo.</p>
+      <div style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-bottom:10px">
+        <a class="btn btn-primary" href="https://wa.me/573002549527?text=Hola%20Creaciones%20M%26P%2C%20quiero%20pedir%20un%20desayuno%20sorpresa." target="_blank" rel="noopener" style="font-size:15px;padding:11px 20px">WhatsApp 300 2549527</a>
+        <a class="btn btn-secondary" href="https://wa.me/573112698201?text=Hola%20Creaciones%20M%26P%2C%20quiero%20pedir%20un%20desayuno%20sorpresa." target="_blank" rel="noopener" style="font-size:15px;padding:11px 20px">WhatsApp 311 2698201</a>
+      </div>
+      <p style="margin:0;font-size:12.5px;color:var(--color-neutral-500)">{{ notaEntrega }}</p>
+    </div>
+  </section>
+
+  <footer style="border-top:1px solid var(--color-divider)">
+    <div style="max-width:1140px;margin:0 auto;padding:26px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;font-size:12.5px;color:var(--color-neutral-500)">
+      <span style="font-family:var(--font-heading);font-size:15px;color:var(--color-text)">Creaciones M&amp;P</span>
+      <span>Detalles que Despiertan Emociones</span>
+      <span>300 2549527 · 311 2698201</span>
+    </div>
+  </footer>
+</div>
+
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;promo&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Pedidos con 24 horas de anticipación · Envío a domicilio en la ciudad&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;notaEntrega&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Entregas a domicilio · Personalizamos tu detalle · Pedidos con 24h de anticipación&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;mostrarComparativa&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Secciones&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      promo: this.props.promo ?? "Pedidos con 24 horas de anticipación · Envío a domicilio en la ciudad",
+      notaEntrega: this.props.notaEntrega ?? "Entregas a domicilio · Personalizamos tu detalle · Pedidos con 24h de anticipación",
+      mostrarComparativa: this.props.mostrarComparativa ?? true,
+    };
+  }
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./support.js"></script>
+</head>
+<body>
+<x-dc>
+<helmet>
+<link rel="stylesheet" href="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/styles.css">
+<script src="_ds/nocturne-8e76c35b-40bb-4437-a8da-054f849536fd/_ds_bundle.js"></script>
+<script src="./doc-page.js"></script>
+<style>
+doc-page:not(:defined){visibility:hidden}
+body{margin:0}
+@media screen{doc-page{display:block;background:#0e0f19;padding:20px 0}body{background:#0e0f19}}
+@media print{doc-page{background:none;padding:0}}
+a{color:var(--color-accent);text-decoration:none}
+a:hover{color:var(--color-accent-300)}
+.page{background:var(--color-bg);color:var(--color-text);font-family:var(--font-body);display:flex;flex-direction:column;padding:40px 44px 30px;box-sizing:border-box}
+.kick{display:flex;align-items:center;gap:10px;font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--color-accent-200);font-weight:500}
+.kick::before{content:"";display:block;width:24px;height:2px;background:var(--color-accent);flex:none}
+.price{font-family:var(--font-heading);font-size:40px;line-height:.95;letter-spacing:-.025em;color:var(--color-text)}
+.price small{display:block;font-family:var(--font-body);font-size:10.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--color-neutral-300);margin-top:6px;font-weight:400}
+.mosaic{display:grid;gap:10px;flex:1;min-height:0}
+.mosaic figure{margin:0;display:flex;flex-direction:column;min-height:0;position:relative}
+.mosaic img{width:100%;height:100%;object-fit:cover;border-radius:var(--radius-md);display:block;min-height:0;flex:1}
+.mosaic figcaption{font-family:var(--font-heading);font-size:13.5px;color:var(--color-text);margin-top:7px;line-height:1.25}
+.mosaic figcaption em{display:block;font-family:var(--font-body);font-style:normal;font-size:11.5px;color:var(--color-neutral-300);margin-top:2px}
+.inc{border:1px solid var(--color-neutral-800);background:var(--color-neutral-900);border-radius:var(--radius-lg);padding:16px 18px;margin-top:14px}
+.inc h5{margin:0 0 10px;font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-200);font-weight:500}
+.inc ul{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:7px 20px;font-size:12.5px;color:var(--color-neutral-100)}
+.inc li{display:flex;gap:8px;align-items:baseline;line-height:1.3}
+.inc li::before{content:"✓";color:var(--color-accent-300);font-size:11px;flex:none}
+.cta{display:flex;align-items:center;justify-content:space-between;gap:16px;margin-top:12px;border:1px solid var(--color-accent-700);border-radius:var(--radius-lg);padding:12px 18px;background:color-mix(in srgb, var(--color-accent-900) 55%, transparent)}
+.cta b{font-family:var(--font-heading);font-size:14.5px;font-weight:500}
+.cta span{font-size:12px;color:var(--color-neutral-200)}
+.cta .num{font-family:var(--font-heading);font-size:17px;white-space:nowrap;color:var(--color-accent-200)}
+.foot{display:flex;justify-content:space-between;align-items:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--color-neutral-400);border-top:1px solid var(--color-divider);padding-top:10px;margin-top:12px}
+</style>
+</helmet>
+
+<doc-page>
+
+  <section class="page" data-screen-label="Portada" style="padding:0;position:relative">
+    <div style="flex:1;min-height:0;position:relative;overflow:hidden">
+      <img class="lighten" src="img/110k-te-amo.jpg" alt="" style="width:100%;height:100%;object-fit:cover;display:block">
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg, color-mix(in srgb, var(--color-bg) 55%, transparent) 0%, transparent 38%, color-mix(in srgb, var(--color-bg) 92%, transparent) 88%, var(--color-bg) 100%)"></div>
+      <div style="position:absolute;top:40px;left:44px;right:44px;display:flex;justify-content:space-between;align-items:flex-start;gap:20px">
+        <div class="kick">Catálogo {{ anio }}</div>
+        <div style="font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-neutral-100);text-align:right">Desayunos sorpresa<br>a domicilio</div>
+      </div>
+    </div>
+    <div style="padding:30px 44px 36px;background:var(--color-bg)">
+      <div style="font-size:13px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-200);margin-bottom:10px">Hola, bienvenido</div>
+      <h1 style="margin:0 0 14px;font-size:50px;line-height:1;letter-spacing:-.03em">Creaciones M&amp;P</h1>
+      <p style="margin:0 0 22px;font-size:18px;line-height:1.45;color:var(--color-neutral-100);max-width:40ch">Este es nuestro catálogo. Seis colecciones de desayunos sorpresa con globos, desde $35.000. La sorpresa llega antes que el día.</p>
+      <div style="display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px">
+        <span class="tag tag-accent" style="font-size:12px">Cumpleaños</span>
+        <span class="tag tag-outline" style="font-size:12px">Aniversario</span>
+        <span class="tag tag-outline" style="font-size:12px">Amor y amistad</span>
+        <span class="tag tag-outline" style="font-size:12px">Solo porque sí</span>
+      </div>
+      <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:24px;border-top:1px solid var(--color-divider);padding-top:16px;flex-wrap:wrap">
+        <div style="font-size:12.5px;color:var(--color-neutral-200);line-height:1.6">
+          Pedidos con 24 h de anticipación<br>Entrega a domicilio en toda la ciudad
+        </div>
+        <div style="text-align:right">
+          <div style="font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--color-accent-200);margin-bottom:4px">Pide por WhatsApp</div>
+          <div style="font-family:var(--font-heading);font-size:22px;line-height:1.25">300 2549527 · 311 2698201</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="page" data-screen-label="Índice">
+    <div class="kick">Las seis colecciones</div>
+    <h2 style="margin:12px 0 6px;font-size:32px;letter-spacing:-.02em">Elige por presupuesto</h2>
+    <p style="margin:0 0 22px;font-size:13.5px;color:var(--color-neutral-200);max-width:62ch">Todas las líneas incluyen globos, bandeja y cubiertos. Lo que cambia es el tamaño de la bandeja y lo que va dentro. Los precios son por desayuno completo, listo para entregar.</p>
+    <div style="display:flex;flex-direction:column;gap:10px;flex:1;min-height:0">
+      <div style="display:flex;align-items:center;gap:16px;border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:11px 14px;flex:1;min-height:0">
+        <img class="lighten" src="img/35k-azul-rey.jpg" alt="" style="width:78px;height:100%;min-height:0;object-fit:cover;border-radius:var(--radius-sm);flex:none">
+        <div style="flex:1;min-width:0">
+          <div style="font-family:var(--font-heading);font-size:17px">01 · Desayunos Clásicos</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-200);margin-top:3px">Globo grande, base cromada y bandeja con lo esencial · 3 diseños</div>
+        </div>
+        <div style="font-family:var(--font-heading);font-size:23px;white-space:nowrap">$35.000</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:11px 14px;flex:1;min-height:0">
+        <img class="lighten" src="img/55k-rojo-pasion.jpg" alt="" style="width:78px;height:100%;min-height:0;object-fit:cover;border-radius:var(--radius-sm);flex:none">
+        <div style="flex:1;min-width:0">
+          <div style="font-family:var(--font-heading);font-size:17px">02 · Desayunos Premium</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-200);margin-top:3px">Bandeja hexagonal, jugo natural y dulces · 4 diseños</div>
+        </div>
+        <div style="font-family:var(--font-heading);font-size:23px;white-space:nowrap">$55.000</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:11px 14px;flex:1;min-height:0">
+        <img class="lighten" src="img/65k-rojo.jpg" alt="" style="width:78px;height:100%;min-height:0;object-fit:cover;border-radius:var(--radius-sm);flex:none">
+        <div style="flex:1;min-width:0">
+          <div style="font-family:var(--font-heading);font-size:17px">03 · Sorpresa Elegante</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-200);margin-top:3px">Bandeja de madera y globo burbuja a juego · 4 colores</div>
+        </div>
+        <div style="font-family:var(--font-heading);font-size:23px;white-space:nowrap">$65.000</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;border:1px solid var(--color-accent-700);border-radius:var(--radius-lg);padding:11px 14px;flex:1;min-height:0;background:color-mix(in srgb, var(--color-accent-900) 45%, transparent)">
+        <img class="lighten" src="img/75k-rosa-pastel.jpg" alt="" style="width:78px;height:100%;min-height:0;object-fit:cover;border-radius:var(--radius-sm);flex:none">
+        <div style="flex:1;min-width:0">
+          <div style="display:flex;align-items:center;gap:9px"><span style="font-family:var(--font-heading);font-size:17px">04 · Super Premium</span><span class="tag tag-accent" style="font-size:10px;letter-spacing:.1em">El más completo por su precio</span></div>
+          <div style="font-size:12.5px;color:var(--color-neutral-100);margin-top:3px">Mesa de madera tipo pícnic, fruta picada, crispetas y chocolates · 4 diseños</div>
+        </div>
+        <div style="font-family:var(--font-heading);font-size:23px;white-space:nowrap">$75.000</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:11px 14px;flex:1;min-height:0">
+        <img class="lighten" src="img/90k-azul-marino.jpg" alt="" style="width:78px;height:100%;min-height:0;object-fit:cover;border-radius:var(--radius-sm);flex:none">
+        <div style="flex:1;min-width:0">
+          <div style="font-family:var(--font-heading);font-size:17px">05 · Arco de globos</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-200);margin-top:3px">Arco de globos con placa personalizada · 4 ocasiones</div>
+        </div>
+        <div style="font-family:var(--font-heading);font-size:23px;white-space:nowrap">$90.000</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;border:1px solid var(--color-neutral-800);border-radius:var(--radius-lg);padding:11px 14px;flex:1;min-height:0">
+        <img class="lighten" src="img/110k-negro-gold.jpg" alt="" style="width:78px;height:100%;min-height:0;object-fit:cover;border-radius:var(--radius-sm);flex:none">
+        <div style="flex:1;min-width:0">
+          <div style="font-family:var(--font-heading);font-size:17px">06 · Colección de Lujo</div>
+          <div style="font-size:12.5px;color:var(--color-neutral-200);margin-top:3px">Globo burbuja, placa con mensaje, Ferrero Rocher y pastelito · 4 diseños</div>
+        </div>
+        <div style="font-family:var(--font-heading);font-size:23px;white-space:nowrap">$110.000</div>
+      </div>
+    </div>
+    <div class="foot"><span>Creaciones M&amp;P · Detalles que despiertan emociones</span><span>WhatsApp 300 2549527</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Clásicos $35.000">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid var(--color-divider);padding-bottom:14px;margin-bottom:16px">
+      <div>
+        <div class="kick">Colección 01</div>
+        <h2 style="margin:10px 0 0;font-size:31px;letter-spacing:-.02em">Desayunos Clásicos</h2>
+        <p style="margin:7px 0 0;font-size:13px;color:var(--color-neutral-200);max-width:50ch">El detalle más pedido para una mañana de cumpleaños: globo grande, base de globos cromados y bandeja con lo esencial.</p>
+      </div>
+      <div class="price">$35.000<small>3 diseños</small></div>
+    </div>
+    <div class="mosaic" style="grid-template-columns:1.35fr 1fr;grid-template-rows:1fr 1fr">
+      <figure style="grid-row:span 2"><img class="lighten" src="img/35k-azul-rey.jpg" alt="Azul Rey"><figcaption>Azul Rey</figcaption></figure>
+      <figure><img class="lighten" src="img/35k-rosado-pastel.jpg" alt="Rosado Pastel"><figcaption>Rosado Pastel</figcaption></figure>
+      <figure><img class="lighten" src="img/35k-negro-gold.jpg" alt="Negro Gold"><figcaption>Negro Gold</figcaption></figure>
+    </div>
+    <div class="inc">
+      <h5>Incluye</h5>
+      <ul>
+        <li>Huevos con salchicha o revueltos</li><li>Sándwich</li><li>Fruta picada</li>
+        <li>Mini Nutella</li><li>Bebida</li><li>Cubiertos</li>
+      </ul>
+    </div>
+    <div class="cta">
+      <div><b>Pídelo hoy por WhatsApp</b><br><span>Escribe: “Quiero el Clásico Azul Rey de $35.000”</span></div>
+      <div class="num">300 2549527</div>
+    </div>
+    <div class="foot"><span>Creaciones M&amp;P</span><span>Pedidos con 24 h de anticipación</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Premium $55.000">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid var(--color-divider);padding-bottom:14px;margin-bottom:16px">
+      <div>
+        <div class="kick">Colección 02</div>
+        <h2 style="margin:10px 0 0;font-size:31px;letter-spacing:-.02em">Desayunos Premium</h2>
+        <p style="margin:7px 0 0;font-size:13px;color:var(--color-neutral-200);max-width:50ch">Bandeja hexagonal decorada con moños, globo estampado de estrellas y una mesa completa de sandwiches, bebida, fruta y dulces.</p>
+      </div>
+      <div class="price">$55.000<small>4 diseños</small></div>
+    </div>
+    <div class="mosaic" style="grid-template-columns:repeat(2,1fr);grid-template-rows:1fr 1fr">
+      <figure><img class="lighten" src="img/55k-negro-estrellas.jpg" alt="Negro Gold Estrellas"><figcaption>Negro Gold Estrellas</figcaption></figure>
+      <figure><img class="lighten" src="img/55k-rojo-pasion.jpg" alt="Rojo Pasión"><figcaption>Rojo Pasión</figcaption></figure>
+      <figure><img class="lighten" src="img/55k-azul-rey.jpg" alt="Azul Rey"><figcaption>Azul Rey</figcaption></figure>
+      <figure><img class="lighten" src="img/55k-rosado-princesa.jpg" alt="Rosado Princesa"><figcaption>Rosado Princesa</figcaption></figure>
+    </div>
+    <div class="inc">
+      <h5>Incluye</h5>
+      <ul>
+        <li>Huevos rancheros o revueltos</li><li>Sandwiches</li><li>Milo o chocolate</li>
+        <li>Jugo natural</li><li>Maní o masmelos</li><li>Cubiertos</li>
+      </ul>
+    </div>
+    <div class="cta">
+      <div><b>Pídelo hoy por WhatsApp</b><br><span>Escribe: “Quiero el Premium Rojo Pasión de $55.000”</span></div>
+      <div class="num">300 2549527</div>
+    </div>
+    <div class="foot"><span>Creaciones M&amp;P</span><span>Pedidos con 24 h de anticipación</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Sorpresa Elegante $65.000">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid var(--color-divider);padding-bottom:14px;margin-bottom:16px">
+      <div>
+        <div class="kick">Colección 03</div>
+        <h2 style="margin:10px 0 0;font-size:31px;letter-spacing:-.02em">Desayuno Sorpresa Elegante</h2>
+        <p style="margin:7px 0 0;font-size:13px;color:var(--color-neutral-200);max-width:50ch">La misma mesa de la línea Premium sobre bandeja de madera, con globo burbuja y moño a juego. Elige el color.</p>
+      </div>
+      <div class="price">$65.000<small>4 colores</small></div>
+    </div>
+    <div class="mosaic" style="grid-template-columns:repeat(2,1fr);grid-template-rows:1fr 1fr">
+      <figure><img class="lighten" src="img/65k-rojo.jpg" alt="Rojo"><figcaption>Rojo</figcaption></figure>
+      <figure><img class="lighten" src="img/65k-azul.jpg" alt="Azul"><figcaption>Azul</figcaption></figure>
+      <figure><img class="lighten" src="img/65k-negro.jpg" alt="Negro"><figcaption>Negro</figcaption></figure>
+      <figure><img class="lighten" src="img/65k-rosa.jpg" alt="Rosa"><figcaption>Rosa</figcaption></figure>
+    </div>
+    <div class="inc">
+      <h5>Nuestro menú incluye</h5>
+      <ul>
+        <li>Huevos rancheros o revueltos</li><li>Sandwiches</li><li>Milo o chocolate</li>
+        <li>Jugo natural</li><li>Maní o masmelos</li><li>Cubiertos</li>
+      </ul>
+    </div>
+    <div class="cta">
+      <div><b>Pídelo hoy por WhatsApp</b><br><span>Escribe: “Quiero el Sorpresa Elegante Negro de $65.000”</span></div>
+      <div class="num">300 2549527</div>
+    </div>
+    <div class="foot"><span>Creaciones M&amp;P</span><span>Pedidos con 24 h de anticipación</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Super Premium $75.000">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid var(--color-divider);padding-bottom:14px;margin-bottom:16px">
+      <div>
+        <div class="kick">Colección 04 · el más completo por su precio</div>
+        <h2 style="margin:10px 0 0;font-size:31px;letter-spacing:-.02em">Super Premium</h2>
+        <p style="margin:7px 0 0;font-size:13px;color:var(--color-neutral-200);max-width:50ch">Mesa de madera tipo pícnic, bouquet de globos y la bandeja más surtida: fruta picada, crispetas y chocolates.</p>
+      </div>
+      <div class="price">$75.000<small>4 diseños</small></div>
+    </div>
+    <div class="mosaic" style="grid-template-columns:repeat(2,1fr);grid-template-rows:1fr 1fr">
+      <figure><img class="lighten" src="img/75k-rosa-pastel.jpg" alt="Rosa Pastel"><figcaption>Rosa Pastel</figcaption></figure>
+      <figure><img class="lighten" src="img/75k-rojo.jpg" alt="Rojo"><figcaption>Rojo</figcaption></figure>
+      <figure><img class="lighten" src="img/75k-negro-gold.jpg" alt="Negro Elegante Gold"><figcaption>Negro Elegante Gold</figcaption></figure>
+      <figure><img class="lighten" src="img/75k-rosado-lunares.jpg" alt="Rosado Brillante con Lunares"><figcaption>Rosado Brillante<em>con lunares</em></figcaption></figure>
+    </div>
+    <div class="inc">
+      <h5>Incluye tu desayuno</h5>
+      <ul>
+        <li>Huevos rancheros o revueltos</li><li>Sandwiches frescos</li><li>Milo o chocolate caliente</li>
+        <li>Jugo natural con tapa domo</li><li>Fruta picada: fresa, kiwi, mango</li><li>Crispetas + maní tostado</li>
+        <li>Chocolates</li><li>Cubiertos incluidos</li><li>Mesa de madera tipo pícnic</li>
+      </ul>
+    </div>
+    <div class="cta">
+      <div><b>Pídelo hoy por WhatsApp</b><br><span>Escribe: “Quiero el Super Premium Rosa Pastel de $75.000”</span></div>
+      <div class="num">300 2549527</div>
+    </div>
+    <div class="foot"><span>Creaciones M&amp;P</span><span>Pedidos con 24 h de anticipación</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Arco de globos $90.000">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid var(--color-divider);padding-bottom:14px;margin-bottom:16px">
+      <div>
+        <div class="kick">Colección 05</div>
+        <h2 style="margin:10px 0 0;font-size:31px;letter-spacing:-.02em">Arco de globos</h2>
+        <p style="margin:7px 0 0;font-size:13px;color:var(--color-neutral-200);max-width:50ch">Bandeja blanca con arco de globos y placa personalizada. La misma línea sirve para cumpleaños, aniversario y amor y amistad.</p>
+      </div>
+      <div class="price">$90.000<small>4 ocasiones</small></div>
+    </div>
+    <div class="mosaic" style="grid-template-columns:repeat(2,1fr);grid-template-rows:1fr 1fr">
+      <figure><img class="lighten" src="img/90k-azul-marino.jpg" alt="Azul Marino"><figcaption>Azul Marino<em>Feliz Cumpleaños</em></figcaption></figure>
+      <figure><img class="lighten" src="img/90k-rosa-dorado.jpg" alt="Rosa con Dorado"><figcaption>Rosa con Dorado<em>Feliz Cumpleaños</em></figcaption></figure>
+      <figure><img class="lighten" src="img/90k-rojo-aniversario.jpg" alt="Rojo"><figcaption>Rojo<em>Feliz Aniversario · Te amo</em></figcaption></figure>
+      <figure><img class="lighten" src="img/90k-rosa-amistad.jpg" alt="Rosa"><figcaption>Rosa<em>Feliz Día del Amor y la Amistad</em></figcaption></figure>
+    </div>
+    <div class="inc">
+      <h5>Menú incluye</h5>
+      <ul>
+        <li>Huevos rancheros o revueltos</li><li>Sandwiches</li><li>Milo o chocolate</li>
+        <li>Jugo natural</li><li>Fruta picada</li><li>Maní</li>
+        <li>Gomitas</li><li>Cubiertos incluidos</li>
+      </ul>
+    </div>
+    <div class="cta">
+      <div><b>Personaliza la placa</b><br><span>Dinos el nombre y el mensaje que va en el arco</span></div>
+      <div class="num">300 2549527</div>
+    </div>
+    <div class="foot"><span>Creaciones M&amp;P</span><span>Pedidos con 24 h de anticipación</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Lujo $110.000" style="background:linear-gradient(180deg, var(--color-section) 0%, color-mix(in srgb, var(--color-section) 50%, var(--color-bg)) 100%)">
+    <div style="display:flex;align-items:flex-start;justify-content:space-between;gap:20px;border-bottom:1px solid color-mix(in srgb, var(--color-neutral-100) 22%, transparent);padding-bottom:14px;margin-bottom:16px">
+      <div>
+        <div class="kick">Colección 06 · lo más alto de la carta</div>
+        <h2 style="margin:10px 0 0;font-size:31px;letter-spacing:-.02em">Colección de Lujo</h2>
+        <p style="margin:7px 0 0;font-size:13px;color:var(--color-neutral-100);max-width:50ch">Globo burbuja con globos internos, placa con mensaje y la bandeja más completa: Ferrero Rocher, pastelito y sandwiches de tomate.</p>
+      </div>
+      <div class="price">$110.000<small style="color:var(--color-neutral-200)">4 diseños</small></div>
+    </div>
+    <div class="mosaic" style="grid-template-columns:repeat(2,1fr);grid-template-rows:1fr 1fr">
+      <figure><img class="lighten" src="img/110k-te-amo.jpg" alt="Rosa y Dorado"><figcaption>Rosa &amp; Dorado<em style="color:var(--color-neutral-200)">Te Amo Infinitamente</em></figcaption></figure>
+      <figure><img class="lighten" src="img/110k-azul-noche.jpg" alt="Azul Noche"><figcaption>Azul Noche<em style="color:var(--color-neutral-200)">Eres Mi Persona Favorita</em></figcaption></figure>
+      <figure><img class="lighten" src="img/110k-rojo-negro.jpg" alt="Rojo Negro"><figcaption>Rojo Negro<em style="color:var(--color-neutral-200)">Siempre a tu Lado</em></figcaption></figure>
+      <figure><img class="lighten" src="img/110k-negro-gold.jpg" alt="Negro y Gold"><figcaption>Negro &amp; Gold<em style="color:var(--color-neutral-200)">Eres el Amor de mi Vida</em></figcaption></figure>
+    </div>
+    <div class="inc" style="background:color-mix(in srgb, var(--color-bg) 55%, transparent);border-color:color-mix(in srgb, var(--color-neutral-100) 20%, transparent)">
+      <h5>Incluye</h5>
+      <ul>
+        <li>Huevos rancheros o revueltos</li><li>Sandwiches de tomate</li><li>Milo o chocolate</li>
+        <li>Jugo natural</li><li>Fruta picada</li><li>Maní</li>
+        <li>Gomitas</li><li>Ferrero Rocher</li><li>Pastelito</li>
+        <li>Cubiertos</li><li>Placa con tu mensaje</li>
+      </ul>
+    </div>
+    <div class="cta" style="border-color:color-mix(in srgb, var(--color-accent-200) 45%, transparent);background:color-mix(in srgb, var(--color-bg) 45%, transparent)">
+      <div><b>Regálalo en grande</b><br><span style="color:var(--color-neutral-100)">Escribe: “Quiero el de Lujo Negro &amp; Gold de $110.000”</span></div>
+      <div class="num">300 2549527</div>
+    </div>
+    <div class="foot" style="border-color:color-mix(in srgb, var(--color-neutral-100) 20%, transparent);color:var(--color-neutral-200)"><span>Creaciones M&amp;P</span><span>Pedidos con 24 h de anticipación</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Comparativa">
+    <div class="kick">Resumen</div>
+    <h2 style="margin:12px 0 6px;font-size:31px;letter-spacing:-.02em">Compara las seis líneas</h2>
+    <p style="margin:0 0 18px;font-size:13px;color:var(--color-neutral-200)">Lo que cambia de una a otra, en una sola tabla.</p>
+    <table class="table" style="width:100%;font-size:12.5px">
+      <thead><tr><th>Colección</th><th>Precio</th><th>Diseños</th><th>Qué la distingue</th></tr></thead>
+      <tbody>
+        <tr><td>Clásicos</td><td>$35.000</td><td>3</td><td>Globo grande, base cromada, bandeja esencial</td></tr>
+        <tr><td>Premium</td><td>$55.000</td><td>4</td><td>Bandeja hexagonal, jugo natural y dulces</td></tr>
+        <tr><td>Sorpresa Elegante</td><td>$65.000</td><td>4</td><td>Bandeja de madera y globo burbuja</td></tr>
+        <tr><td>Super Premium</td><td>$75.000</td><td>4</td><td>Mesa de madera tipo pícnic, fruta picada y crispetas</td></tr>
+        <tr><td>Arco de globos</td><td>$90.000</td><td>4</td><td>Arco de globos con placa personalizada</td></tr>
+        <tr><td>Lujo</td><td>$110.000</td><td>4</td><td>Ferrero Rocher, pastelito y mensaje impreso</td></tr>
+      </tbody>
+    </table>
+    <h3 style="margin:30px 0 14px;font-size:21px">Lo que siempre incluimos</h3>
+    <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px">
+      <div class="card" style="padding:16px 18px">
+        <div class="card-kicker">Personalización</div>
+        <div class="card-title" style="font-size:15px">Nombre, mensaje y color</div>
+        <div class="card-body" style="font-size:12.5px;color:var(--color-neutral-200)">El globo se rotula con lo que elijas: Feliz Cumpleaños, Feliz Aniversario, Te Amo o el mensaje que quieras.</div>
+      </div>
+      <div class="card" style="padding:16px 18px">
+        <div class="card-kicker">Frescura</div>
+        <div class="card-title" style="font-size:15px">Se arma el mismo día</div>
+        <div class="card-body" style="font-size:12.5px;color:var(--color-neutral-200)">Huevos, sandwiches, fruta y jugo natural se preparan la mañana de la entrega, no antes.</div>
+      </div>
+      <div class="card" style="padding:16px 18px">
+        <div class="card-kicker">Entrega</div>
+        <div class="card-title" style="font-size:15px">A la hora exacta</div>
+        <div class="card-body" style="font-size:12.5px;color:var(--color-neutral-200)">Coordinamos la hora para que la sorpresa llegue cuando tiene que llegar, a domicilio en la ciudad.</div>
+      </div>
+    </div>
+    <div style="flex:1"></div>
+    <div class="foot"><span>Creaciones M&amp;P · Detalles que despiertan emociones</span><span>Catálogo {{ anio }}</span></div>
+  </section>
+
+  <section class="page" data-screen-label="Cómo pedir y contacto">
+    <div class="kick">Cómo pedir</div>
+    <h2 style="margin:12px 0 22px;font-size:31px;letter-spacing:-.02em">Tres pasos y listo</h2>
+    <div style="display:flex;flex-direction:column;gap:16px">
+      <div style="display:flex;gap:16px;align-items:flex-start;border-left:2px solid var(--color-accent-700);padding-left:16px">
+        <div style="font-family:var(--font-heading);font-size:30px;color:var(--color-accent-300);line-height:1;width:46px;flex:none">01</div>
+        <div><h4 style="margin:0 0 4px;font-size:17px">Elige tu diseño</h4><p style="margin:0;font-size:13px;color:var(--color-neutral-200);max-width:62ch">Escríbenos por WhatsApp el nombre de la colección y el color que viste en este catálogo. Si quieres algo distinto, cuéntanos la idea.</p></div>
+      </div>
+      <div style="display:flex;gap:16px;align-items:flex-start;border-left:2px solid var(--color-accent-700);padding-left:16px">
+        <div style="font-family:var(--font-heading);font-size:30px;color:var(--color-accent-300);line-height:1;width:46px;flex:none">02</div>
+        <div><h4 style="margin:0 0 4px;font-size:17px">Personalízalo</h4><p style="margin:0;font-size:13px;color:var(--color-neutral-200);max-width:62ch">Dinos el nombre de quien recibe, el mensaje del globo y el color. Ajustamos el menú si hay alguna preferencia o alergia.</p></div>
+      </div>
+      <div style="display:flex;gap:16px;align-items:flex-start;border-left:2px solid var(--color-accent-700);padding-left:16px">
+        <div style="font-family:var(--font-heading);font-size:30px;color:var(--color-accent-300);line-height:1;width:46px;flex:none">03</div>
+        <div><h4 style="margin:0 0 4px;font-size:17px">Confirma la entrega</h4><p style="margin:0;font-size:13px;color:var(--color-neutral-200);max-width:62ch">Envíanos dirección y hora. Pedimos 24 horas de anticipación para armarlo fresco y entregarlo puntual.</p></div>
+      </div>
+    </div>
+    <div style="flex:1;min-height:20px"></div>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:16px">
+      <img class="lighten" src="img/75k-negro-gold.jpg" alt="" style="width:100%;height:170px;object-fit:cover;border-radius:var(--radius-md)">
+      <img class="lighten" src="img/90k-rosa-amistad.jpg" alt="" style="width:100%;height:170px;object-fit:cover;border-radius:var(--radius-md)">
+    </div>
+    <div style="border:1px solid var(--color-accent-700);background:color-mix(in srgb, var(--color-accent-900) 55%, transparent);border-radius:var(--radius-lg);padding:22px 24px;text-align:center">
+      <div style="font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--color-accent-200);margin-bottom:10px">Contáctanos y ordena</div>
+      <div style="font-family:var(--font-heading);font-size:26px;letter-spacing:-.01em;margin-bottom:6px">300 2549527 · 311 2698201</div>
+      <div style="font-size:13px;color:var(--color-neutral-100)">{{ notaEntrega }}</div>
+    </div>
+    <div class="foot"><span>Creaciones M&amp;P · Detalles que despiertan emociones</span><span>Catálogo {{ anio }}</span></div>
+  </section>
+
+</doc-page>
+</x-dc>
+<script type="text/x-dc" data-dc-script data-props="{&quot;anio&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;2026&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;},&quot;notaEntrega&quot;:{&quot;editor&quot;:&quot;text&quot;,&quot;default&quot;:&quot;Entregas a domicilio · Personalizamos tu detalle · Pedidos con 24 h de anticipación&quot;,&quot;tsType&quot;:&quot;string&quot;,&quot;section&quot;:&quot;Contenido&quot;}}">
+class Component extends DCLogic {
+  renderVals() {
+    return {
+      anio: this.props.anio ?? "2026",
+      notaEntrega: this.props.notaEntrega ?? "Entregas a domicilio · Personalizamos tu detalle · Pedidos con 24 h de anticipación",
+    };
+  }
+}
+</script>
+</body>
+</html>
